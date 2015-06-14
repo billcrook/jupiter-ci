@@ -7,9 +7,18 @@ ci01:
   links:
    - mysql01
    - sonarqube01
+sonarqube01:
+  image: sonarqube
+  ports:
+  - "9000:9000"
+  - "9092:9092"
+  environment:
+  - SONARQUBE_JDBC_USERNAME=sonar
+  - SONARQUBE_JDBC_PASSWORD=sonar
+  - SONARQUBE_JDBC_URL=jdbc:mysql://mysql01/sonar
+  links:
+  - mysql01
 mysql01:
   image: mysql
   environment: 
   - MYSQL_ROOT_PASSWORD=root
-sonarqube01:
-  image: sonarqube
