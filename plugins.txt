@@ -1,0 +1,15 @@
+github:1.11.3
+semantic-versioning-plugin:1.7
+emotional-jenkins-plugin:1.2
+depgraph-view:0.11
+delivery-pipeline-plugin:0.9.4
+build-pipeline-plugin:1.4.7
+database-mysql:1.0
+database-postgresql:1.0
+sonar:2.2.1
+sbt:1.5
+docker-build-step:1.25
+rake:1.8.0
+maven-info:0.2.0
+artifact-diff-plugin:1.3
+memegen:0.4.3

@@ -1,0 +1,15 @@
+ci01:
+  build: .
+  ports:
+   - "8080:8080"
+  volumes:
+   - ./jenkins:/host-config
+  links:
+   - mysql01
+   - sonarqube01
+mysql01:
+  image: mysql
+  environment: 
+  - MYSQL_ROOT_PASSWORD=root
+sonarqube01:
+  image: sonarqube
